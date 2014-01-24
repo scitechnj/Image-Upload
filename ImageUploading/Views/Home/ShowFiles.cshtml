@@ -1,0 +1,21 @@
+﻿@model ImageUploading.Controllers.ContentFileInfoViewModel
+
+<table class="table table-striped table-bordered table-hover">
+    <tr>
+        <th style="text-align: center;">Image</th>
+        <th>Size</th>
+        <th>Name</th>
+        <th>Date</th>
+        <th>Extension</th>
+    </tr>
+    @foreach (var file in this.Model.Files)
+    {
+        <tr>
+            <td style="text-align: center;"><img src="/Content/UploadedImages/Thumb_@file.Name"/></td>
+            <td>@file.Size</td>
+            <td>@file.Name</td>
+            <td>@file.CreatedDate</td>
+            <td>@file.Extension</td>
+        </tr>
+    }
+</table>

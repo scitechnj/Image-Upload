@@ -1,0 +1,11 @@
+﻿<div class="row">
+    <form method="POST" action="/home/PostImage" enctype="multipart/form-data">
+        <input id="fileUpload" class="btn btn-file" accept="image/*" type="file" name="myImage"/>
+        <br/>
+        <input type="submit" class="btn btn-danger" value="Upload Image"/>
+    </form>
+</div>
+
+@section scripts{
+    <script type="text/javascript" src="~/Scripts/HomeScripts.js"></script>
+}
